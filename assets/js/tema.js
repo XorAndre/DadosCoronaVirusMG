@@ -21,3 +21,26 @@ google.charts.setOnLoadCallback(drawChart);
 
     chart.draw(data, options);
   }*/
+google.charts.load('current', {'packages':['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    let data = google.visualization.arrayToDataTable([
+      ['Data', '', 'Números de casos graves'],
+      ['17/03/2020',  0,      14],
+      ['18/03/2020',  0,      18],
+      ['19/03/2020',  0,      18],
+      ['20/03/2020',  0,      38], 
+      ['21/03/2020',  0,      55],    
+      ['22/03/2020',  0,      83],    
+    ]);
+
+    let options = {
+      title: 'Gráfico de pessoas com corona vírus',
+      hAxis: {title: 'Data',  titleTextStyle: {color: '#333'}},
+      vAxis: {minValue: 0}
+    };
+
+    let chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+    chart.draw(data, options);
+  }
