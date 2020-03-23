@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gráfico Corona Vírus em Minas Gerais</title>
+        <!--SEO-->
+        <meta name="author" content="Andmré Laurentino Rodrigues">
+        <meta name="description" content="Gráfico sobre a propagação do vírus em Minas Gherais">
+        <meta name="keywords" content="Corona vírus, Gráfico Corona vírus, Como evitar o Corona vírus, Vírus">
+        <!--CSS-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/main.css">    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+        <!--JavaScript-->
+        <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script>
+        <script src="assets/js/tema.js"></script>    
+    </head>
+    <body>
+        <main>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+              <div class="container">
+                <a class="navbar-brand" href="#">Sistema CC-19</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                          </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="pages/hostoridadoenca.html">O que é a doença</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Relatórios da doença</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Possíveis áreas afetadas</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav><!--menu-->
+            <section>
+                <article class="container">
+                    <div class="row margin-top-card">
+                    <div class="md-12">
+                        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                          <strong>Atenção!</strong> Os dados de gráficos nesse site são de fontes seguras do governo de Minas Gerais. Não Compartilher dados vindas de fontes não seguras.
+                          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                      <div class="card-counter danger">
+                        <i class="fa fa-users"></i>
+                        <span class="count-numbers">83 casos</span>
+                        <span class="count-name">Casos Confirmados</span>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                      <div class="card-counter danger">
+                        <i class="fa fa-users"></i>
+                        <span class="count-numbers"></span>
+                        <span class="count-name">Mortes</span>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                      <div class="card-counter bg-warning">
+                        <i class="fa fa-users"></i>
+                        <span class="count-numbers">7.190</span>
+                        <span class="count-name">Em observação</span>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                      <div class="card-counter success">
+                        <i class="fa fa-user-times"></i>
+                        <span class="count-numbers"></span>
+                        <span class="count-name">Curados</span>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="piechart" style="height: 500px;"></div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+    <!--Script-->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    </body>
+</html>
